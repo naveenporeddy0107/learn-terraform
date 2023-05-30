@@ -3,9 +3,11 @@ data "aws_ami" "centos" {
   owners = ["973714476881"]
 }
 
+/*
 output "ami" {
   value = data.aws_ami.centos.image_id
 }
+*/
 
 
 resource "aws_instance" "web" {
