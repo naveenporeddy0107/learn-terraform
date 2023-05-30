@@ -7,6 +7,7 @@ output "ami" {
   value = data.aws_ami.centos.image_id
 }
 
+/*
 resource "aws_instance" "web" {
   ami           = "ami-08ee87f57b38db5af"
   instance_type = "t2.micro"
@@ -18,4 +19,4 @@ resource "aws_instance" "web" {
 
 output "address" {
   value = aws_instance.web.public_ip
-}
+}*/
