@@ -12,5 +12,5 @@ output "output_list" {
   value="${var.list[1]} >>>> ${var.list[2]} >>>> ${var.list[3]}"
 }
 output "dictvalue"{
-  value="${var.dictionary["age"]}"
+  value="${var.dictionary["age"]} and name of the person: ${var.dictionary["name"]}"
 }
