@@ -11,5 +11,5 @@ variable "list"{
 }
 
 output "output_list" {
-  value="${var.list[1]} >>>> ${var.list[2]}"
+  value="${var.list[1]} >>>> ${var.list[2]} >>>> ${var.list[3]}}"
 }
