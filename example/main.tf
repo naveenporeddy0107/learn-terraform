@@ -24,7 +24,7 @@ output "address" {
 }
 
 resource "aws_route53_record" "test" {
-  zone_id = Z0849970P5LI08J61JCE
+  zone_id = "Z0849970P5LI08J61JCE"
   name    = "test-dev.naveendevops.tech"
   type    = "A"
   ttl     = 30
