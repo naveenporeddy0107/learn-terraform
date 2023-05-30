@@ -1,3 +1,12 @@
+data "aws_ami" "centos" {
+  most_recent = true
+  owners = "973714476881"
+}
+
+output "ami" {
+  value = data.aws_ami.centos.id
+}
+
 resource "aws_instance" "web" {
   ami           = "ami-08ee87f57b38db5af"
   instance_type = "t2.micro"
