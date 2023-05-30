@@ -6,3 +6,7 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
 }
+
+output "ipaddress" {
+  public_ipaddress = aws_instance.web.public_ip
+}
