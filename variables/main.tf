@@ -29,8 +29,7 @@ output "output_list" {
   value="${var.list[1]} >>>> ${var.list[2]} >>>> ${var.list[3]}"
 }
 
-variable "dictionary"
-{
+variable "dictionary" {
   default ={
     name="reddy"
     age=34
