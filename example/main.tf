@@ -8,5 +8,5 @@ resource "aws_instance" "web" {
 }
 
 output "ipaddress" {
-  public_ipaddress = aws_instance.web.public_ip
+  address = aws_instance.web.public_ip
 }
