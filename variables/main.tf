@@ -18,8 +18,8 @@ variable "list"{
 
 variable "dictionary" {
   default ={
-    name="reddy"
-    age=34
+    "name"="reddy"
+    "age"=41
   }
 }
 
