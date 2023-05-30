@@ -14,3 +14,7 @@ output "output_list" {
 output "dictvalue"{
   value="${var.dictionary["age"]} and name of the person: ${var.dictionary["name"]}"
 }
+
+output "tfvars" {
+  value=var.env
+}
