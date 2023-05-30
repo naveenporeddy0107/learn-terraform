@@ -7,6 +7,6 @@ resource "aws_instance" "web" {
   }
 }
 
-output "ipaddress" {
+output "web" {
   address = aws_instance.web.public_ip
 }
