@@ -8,5 +8,5 @@ variable "fruits"{
 
 output "total" {
 
-  value= length(count.fruits)
+  value= length(var.fruits)
 }
