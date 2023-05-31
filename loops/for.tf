@@ -6,7 +6,11 @@ variable "fruits"{
   }
 }
 
+provisioner "local-exec" {
+  count=length(var.fruits)
+}
+
 output "total" {
 
-  value= length(var.fruits)
+  value= "${var.fruits[count.index]}"
 }
