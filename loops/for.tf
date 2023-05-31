@@ -5,11 +5,11 @@ variable "fruits"{
     banana=30
   }
 }
-
-provisioner "local-exec" {
-  count=length(var.fruits)
+resource "null_resource" "null" {
+  provisioner "local-exec" {
+    count = length(var.fruits)
+  }
 }
-
 output "total" {
 
   value= "${var.fruits[count.index]}"
