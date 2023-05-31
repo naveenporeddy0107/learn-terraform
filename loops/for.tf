@@ -18,8 +18,10 @@ resource "null_resource" "null" {
     command="echo ${length(var.fruits)}"
   }
 }
-/*
+
 output "total" {
 
-  value= "${var.fruits[count.index]}"
-}*/
+  //value= "${var.fruits[count.index]}"
+
+  value= "${length(var.fruits)}"
+}
