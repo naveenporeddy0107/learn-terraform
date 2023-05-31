@@ -23,5 +23,5 @@ output "total" {
 
   //value= "${var.fruits[count.index]}"
 
-  value= "${length(var.fruits)}"
+  value= "${var.fruits[count.index]}"
 }
