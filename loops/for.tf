@@ -8,14 +8,14 @@ variable "fruits"{
 }
 */
 
-variable "fruits"{
+/*variable "fruits"{
   default=["apple","orange"]
 
-}
+}*/
 resource "null_resource" "null" {
-  count = length(var.fruits)
+  for_each = var.fruits
   provisioner "local-exec" {
-    command="echo ${var.fruits[count.index]}"
+    command="echo ${each.key}.....${each.value}"
   }
 }
 
