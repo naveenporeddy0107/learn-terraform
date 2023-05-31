@@ -1,4 +1,4 @@
-/*
+
 variable "fruits"{
   default={
     apple=10
@@ -6,7 +6,7 @@ variable "fruits"{
     banana=30
   }
 }
-*/
+
 
 /*variable "fruits"{
   default=["apple","orange"]
