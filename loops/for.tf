@@ -15,13 +15,13 @@ variable "fruits"{
 resource "null_resource" "null" {
   count = length(var.fruits)
   provisioner "local-exec" {
-    command="echo ${length(var.fruits)}"
+    command="echo ${var.fruits[count.index]}"
   }
 }
 
-output "total" {
+/*output "total" {
 
   //value= "${var.fruits[count.index]}"
 
   value= "${var.fruits[count.index]}"
-}
+}*/
